@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <style>
+    body {
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhwI1fNEFgWfVhPGsh9UcxQvpNKJ1uuNfoOdd2nS_6vl2Lre9lvPXjrsk&s=10");
+      background-size: cover;       
+      background-position: center;  
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+      margin: 0;
+      min-height: 100vh;
+    }
+  </style>
+</head>
+  <body>
+    <form action="submit.php" method="post">
+      <table>
+
+        <h1><b>Fill up this form</b></h1>
+        <style>
+          h1{
+            text-align: center;
+            color: rgb(0, 248, 215);
+          }
+        </style>
+      <tr>
+        <td><label for="first name"> <b>First Name:</b></label>&emsp;</td>
+        <td>&emsp;<input type="text" id = "first-name" name = "first-name"placeholder="Enter your name"required/>&emsp;</td>
+    
+        <td>&emsp;<label for="last name"><b>Last Name:</b></label>&emsp;</td>
+        <td>&emsp;<input type="text" id = "last-name" name = "last-name"placeholder="Enter your last name"required/>&emsp;</td>
+      </tr>
+    
+      <tr>
+        <td><label for ="email"><b>Email:</b></label></td>
+        <td>&emsp;<input type=" email" id = "email" name = "email"placeholder="Enter your email"required/></td>
+        
+        <td>&emsp;<label for="phone number"><b>Phone Number:</b></label>&emsp;</td>
+        <td>&emsp;<input type="tel" id = "phone-number" name = "phone-number"placeholder="Enter your phone number"required/>&emsp;</td>
+      </tr>
+
+      <tr>
+        <td><label for="gender"><b>Gender:</b></label>&emsp;</td>
+        <td>&emsp;<input type="radio" id = "male" name = "gender" value="male"required/><label for="male">Male</label></td>
+        <td>&emsp;<input type="radio" id = "female" name = "gender" value="female"required/>&emsp;<label for="female">Female</label></td>
+      </tr>
+
+      <tr>
+        <td><label for="country"><b>Country:</b></label>&emsp;</td>
+        <td>&emsp;
+          <select id = "country" name = "country"required>
+            <option value="">Select your country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+            <option value="India">India</option>
+            <option value="Germany">Germany</option>
+            <option value="France">France</option>
+            <option value="Japan">Japan</option>
+            <option value="China">China</option>
+            <option value="Brazil">Brazil</option>
+          </select>&emsp;</td>
+
+        <td>&emsp;<label for="city"><b>City:</b></label>&emsp;</td>
+        <td>&emsp;<input type="text" id = "city" name = "city"placeholder="Enter your city"required/>&emsp;</td>
+      </tr>
+
+      <tr>
+        
+      </tr>
+
+
+
+      </table>
+      <style>
+        td:nth-child(3) label {
+          color: white
+        }
+      </style>
+      <br>
+   </form>
+  </body>
+</html>
