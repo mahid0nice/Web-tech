@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Form</title>
+  <link rel="stylesheet" href="s1.css"> >
   <style>
     body {
       background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhwI1fNEFgWfVhPGsh9UcxQvpNKJ1uuNfoOdd2nS_6vl2Lre9lvPXjrsk&s=10");
@@ -22,7 +23,7 @@
         <style>
           h1{
             text-align: center;
-            color: rgb(0, 248, 215);
+            color: rgb(173, 36, 55);
           }
         </style>
       <tr>
@@ -43,8 +44,8 @@
 
       <tr>
         <td><label for="gender"><b>Gender:</b></label>&emsp;</td>
-        <td>&emsp;<input type="radio" id = "male" name = "gender" value="male"required/><label for="male">Male</label></td>
-        <td>&emsp;<input type="radio" id = "female" name = "gender" value="female"required/>&emsp;<label for="female">Female</label></td>
+        <td>&emsp;<input type="radio" id = "male" name = "gender" value="male"required/><label for="male">Male</label>
+        &emsp;<input type="radio" id = "female" name = "gender" value="female"required/>&emsp;<label for="female">Female</label></td>
       </tr>
 
       <tr>
@@ -69,15 +70,28 @@
       </tr>
 
       <tr>
-        
+        <td><label for="message"><b>Message:</b></label>&emsp;</td>
+        <td colspan="3">&emsp;<textarea id = "message" name = "message"placeholder="Enter your message"required></textarea>&emsp;</td> 
       </tr>
+
+      <tr>
+        <td><label><b>Enter your father's name:</b></label></td>
+        <td>&emsp;<input type="text" id = "father-name" name = "father-name"placeholder="Enter your father's name"required/>&emsp;</td>
+        <td><label><b>Enter your mother's name:</b></label></td>
+        <td>&emsp;<input type="text" id = "mother-name" name = "mother-name"placeholder="Enter your mother's name"required/>&emsp;</td>
+      </tr>
+      <tr>
+        <td><label><b>Date of birth:<b> </label></td>
+        <td>&emsp;<input type ="date" id ="dateofbirth" name ="dateofbirth"required></td>
+
+
 
 
 
       </table>
       <style>
         td:nth-child(3) label {
-          color: white
+          color: rgb(51, 255, 0)
         }
       </style>
       <br>
